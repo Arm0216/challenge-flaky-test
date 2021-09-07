@@ -26,3 +26,16 @@
 Run tests headlessly:
 ```
 npx cypress run
+
+```
+
+### The cause of the issue.
+Wait was not fixed, that's why test was not stable.
+
+### How did I solve that.
+I added default wait in the ```cypress.json``` file which helped to solve the problem
+
+### Another solution.
+I can add timout directly on the part of the code which have issue with waits.
+
+For example: ```cy.get('li', {timeout:time}).should('contain', 'Some Name - some@email.com - core - git-it')```
