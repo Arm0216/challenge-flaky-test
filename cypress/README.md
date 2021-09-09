@@ -12,7 +12,7 @@
    npm start
    ```
 
-###Opening Cypress GUI
+### Opening Cypress GUI
 * `cd` to root directory of the project
 * start local server
 * open Cypress GUI:
